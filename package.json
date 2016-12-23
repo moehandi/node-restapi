@@ -1,8 +1,7 @@
 {
-  "name": "node-token-authentication",
+  "name": "node-restapi",
   "main": "server.js",
   "dependencies": {
-    "bcrypt-nodejs": "0.0.3",
     "bcryptjs": "^2.4.0",
     "body-parser": "^1.15.2",
     "express": "^4.14.0",
@@ -13,5 +12,30 @@
     "morgan": "^1.7.0",
     "passport": "^0.3.2",
     "passport-jwt": "^2.2.1"
-  }
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "description": "An example of TaskManager Projects show how easy to build NodeJS with Express framework, MongoDB, with JWT Authentication.",
+  "version": "1.0.0",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moehandi/node-restapi.git"
+  },
+  "keywords": [
+    "example",
+    "of",
+    "nodejs",
+    "express",
+    "mongodb",
+    "REST",
+    "API"
+  ],
+  "author": "moehandi <moehandi@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/moehandi/node-restapi/issues"
+  },
+  "homepage": "https://github.com/moehandi/node-restapi#readme"
 }
