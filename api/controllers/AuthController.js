@@ -4,7 +4,7 @@
 
 var jwtSimple	    = require('jwt-simple');
 var moment          = require('moment');
-var bcrypt          = require('bcrypt-nodejs');
+var bcrypt          = require('bcryptjs');
 
 var config          = require('../configs/config');
 var User		    = require('../models/UserModel');
@@ -36,7 +36,7 @@ exports.isAuthenticated = function(req, res, next) {
 
     User.findById(payload.sub, function(err, user) {
         if (!user) {
-            return res.status(400).send({ message: 'User no longer exists.' });
+            return res.status(400).send({ message: 'User Token no longer Exists.' });
         }
 
         req.user = user;
